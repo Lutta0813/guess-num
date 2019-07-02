@@ -27,7 +27,7 @@ while True:
 				print('終於猜對了！你總共嘗試了', attemptTimes,'次，遊戲結束！')
 				break
 			else:
-				print('猜錯了')
+				print('猜錯了，這是你猜的第', attemptTimes, '次')
 				if gusNum > ans:
 					print('你猜的數字比較大')
 				elif gusNum < ans:
