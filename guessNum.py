@@ -5,22 +5,22 @@
 
 import random
 
-smallestNum = input('請輸入最小數字： ')
-biggestNum = input('請輸入最大數字： ')
-smallestNum = int(smallestNum)
-biggestNum = int(biggestNum)
-
 while True:
+
+	smallestNum = input('請輸入最小數字： ')
+	biggestNum = input('請輸入最大數字： ')
+	smallestNum = int(smallestNum)
+	biggestNum = int(biggestNum)
+
 	if smallestNum > biggestNum:
 		print('最小數字大於最大數字，請重新輸入')
-		break
 	elif smallestNum < biggestNum:
 		ans = random.randint(smallestNum, biggestNum)
 		attemptTimes = 0
 		while True:
 			# gusNum = input('請輸入要猜測的數字，數字介於', smallestNum, '到', biggestNum, '之間')
 			print('提示：數字介於', smallestNum, '跟', biggestNum, '之間')
-			gusNum = input('請輸入要猜測的數字')
+			gusNum = input('請輸入要猜測的數字: ')
 			gusNum = int(gusNum)
 			attemptTimes = attemptTimes + 1
 			if gusNum == ans:
@@ -35,5 +35,4 @@ while True:
 		break
 	else:
 		print('最小數字等於最大數字，請重新輸入')
-		break
 
